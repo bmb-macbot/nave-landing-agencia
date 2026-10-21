@@ -1,0 +1,44 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Mi página de demo no tenía vista previa al compartirla</title>
+<meta name="description" content="Una fuga propia, comprobada el 21/10/2026: una de las páginas de mi web no lleva las etiquetas que hacen que un enlace compartido se vea con título e imagen. Y cómo comprobar la tuya.">
+<meta name="theme-color" content="#060711">
+<link rel="stylesheet" href="estilo.css">
+</head>
+<body>
+<div class="ia">Texto escrito por Tus leads en automático con ayuda de inteligencia artificial y revisado antes de publicarse.</div>
+<header class="top"><div class="w"><a class="logo" href="index.html">la <b>nave</b> · Tus leads en automático</a><a class="btn sec" href="https://nave.tusleadsenautomatico.com/piloto.html">Ver la nave</a></div></header>
+<main>
+<div class="w">
+<p class="rot">Auditoría de Fugas · caso propio</p>
+<h1>Mi página de demo no tenía <em>vista previa</em> al compartirla</h1>
+<p class="nota">Comprobado el 21/10/2026. El caso es mío, no de un cliente.</p>
+
+<p>Cuando alguien te pasa un enlace por WhatsApp o LinkedIn, lo primero que ve es una tarjeta: título, descripción e imagen. Esa tarjeta se construye con unas etiquetas del código de la página (las llamadas «Open Graph»). Sin ellas, el enlace llega como una URL pelada.</p>
+
+<h2>Lo que encontré</h2>
+<p>Descargué con <code>curl</code> cinco páginas de mi web y conté las etiquetas de vista previa. La portada, servicios, contacto y gracias las llevan: título, descripción, imagen y tarjeta para redes. La página <strong>/demo/</strong>, la que enseña cómo respondo a un contacto en segundos, tiene <strong>cero</strong>: ni título para compartir, ni imagen, ni dirección canónica.</p>
+
+<p>Matiz que debo decir: <strong>/demo/ tiene título y descripción</strong>, y está marcada a propósito como «no indexar» mientras no sea la página de destino de los anuncios. Lo que le falta es la tarjeta para compartir. Es una fuga pendiente de cerrar, no un descuido sin más.</p>
+
+<h2>Por qué es una fuga</h2>
+<p>La demo es justo el tipo de página que querría que me reenviaran: «mira cómo responde este sistema». Si alguien la comparte con un socio o un cliente, esa persona recibe un enlace sin tarjeta, que se ve menos fiable y se abre menos. No afirmo cuántos clics se han perdido: no lo he medido. Digo que la página más compartible es la única de las cinco sin esa preparación.</p>
+
+<h2>Cómo comprobar la tuya en cinco minutos</h2>
+<ol>
+<li>Abre una terminal y ejecuta <code>curl -sSL --max-time 15 https://tu-web.es/pagina | grep -o 'property="og:[a-z:_]*"' | wc -l</code> en cada página que alguien pueda compartir (oferta, reserva, caso).</li>
+<li>Cuenta etiquetas, no líneas, y sigue redirecciones. Si da 0, esa página llega sin tarjeta. Pégala en un mensaje a ti mismo en WhatsApp y míralo.</li>
+<li>Prioriza las páginas a las que envías tráfico o que te reenvían, no las legales.</li>
+</ol>
+
+<h2>Auditoría de Fugas · 197 € (sin IVA)</h2>
+<p>Reviso tu web, tu ficha de Google y cómo contestas a quien te escribe, y te digo qué arreglar primero. Informe en DOCX y 15 minutos de explicación.</p>
+<p><a class="btn" href="https://buy.stripe.com/fZuaEW7V6dBMbD15kx3ks09">Reservar · 197 € sin IVA</a></p>
+<p class="nota">Contenido con apoyo de IA. Sin cifras de resultados ni opiniones de clientes. Contacto: hola@tusleadsenautomatico.com.</p>
+</div>
+</main>
+</body>
+</html>
