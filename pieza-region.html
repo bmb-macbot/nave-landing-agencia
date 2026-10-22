@@ -1,0 +1,36 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Mis datos para buscadores ponen «España» donde va la región</title>
+<meta name="description" content="Una fuga propia, comprobada con curl el 22/10/2026: los datos estructurados de mi portada llevan «España» en el campo de región. Y cómo mirar los tuyos.">
+<meta name="theme-color" content="#060711">
+<link rel="stylesheet" href="estilo.css">
+</head>
+<body>
+<div class="ia">Texto escrito por Tus leads en automático con ayuda de inteligencia artificial y revisado antes de publicarse.</div>
+<header class="top"><div class="w"><a class="logo" href="index.html">la <b>nave</b> · Tus leads en automático</a><a class="btn sec" href="https://nave.tusleadsenautomatico.com/piloto.html">Ver la nave</a></div></header>
+<main>
+<div class="w">
+<p class="rot">Auditoría de Fugas · caso propio</p>
+<h1>Mis datos para buscadores ponen «España» <em>donde va la región</em></h1>
+<p class="nota">Comprobado el 22/10/2026. El caso es mío, no de un cliente.</p>
+
+<p>Mi portada (<code>tusleadsenautomatico.com</code>) lleva, dentro del código, un bloque de datos pensado para buscadores: nombre del negocio, teléfono, correo, localidad y qué servicios ofrece. Es un bloque en formato JSON-LD, el que describe schema.org. Lo leí con <code>curl</code>.</p>
+<p>En la dirección aparece, literal, <code>"addressRegion": "España"</code>, y más abajo <code>"addressCountry": "ES"</code>. Es decir, el país está dicho dos veces y el campo de región, que según schema.org es para una provincia o comunidad, lleva el nombre del país.</p>
+
+<h2>Por qué es una fuga</h2>
+<p>Es un dato de poco peso, y por eso se queda ahí años: nadie lo ve en la página. Pero si un buscador o una herramienta lee ese bloque para ubicar tu negocio, le estás dando un dato que no es lo que el campo pide. No afirmo que me haya costado ninguna visita: no lo he medido, y no sé si los buscadores usan ese campo. Digo que, tal como está, el dato no sirve para lo que se puso.</p>
+
+<h2>Cómo comprobar el tuyo en un minuto</h2>
+<p>Desde la terminal: <code>curl -sL https://tudominio.com | grep -A25 "ld+json"</code> (el <code>-L</code> es para que siga la redirección). Mira si hay bloque, y si la dirección, el teléfono y el nombre coinciden con lo que ves en tu ficha de Google y en tu web. Si no sale nada, prueba también con <code>www.</code>; si sigue sin salir, tu web no declara estos datos. Si el bloque sale en una sola línea o cortado, ábrelo con «ver código fuente». Si salen, comprueba que cada campo lleve lo que su nombre dice.</p>
+
+<h2>Auditoría de Fugas · 197 €</h2>
+<p>Reviso tu web, tu ficha de Google, tus anuncios si los tienes y cómo contestas a quien te escribe, y te digo qué arreglar primero. Informe por escrito y 15 minutos de explicación.</p>
+<p><a class="btn" href="https://buy.stripe.com/fZuaEW7V6dBMbD15kx3ks09">Reservar · 197 €</a></p>
+<p class="nota">Contenido con apoyo de IA. Sin cifras de resultados ni opiniones de clientes. Contacto: hola@tusleadsenautomatico.com.</p>
+</div>
+</main>
+</body>
+</html>
