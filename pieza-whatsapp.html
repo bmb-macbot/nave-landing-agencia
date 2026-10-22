@@ -1,0 +1,37 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Siete botones de WhatsApp en mi web y ninguno dice de qué página viene</title>
+<meta name="description" content="Una fuga propia, comprobada con curl el 22/10/2026: los botones de WhatsApp de mi web llevan todos el mismo mensaje, así que no sé qué página trae cada conversación. Y cómo mirar la tuya.">
+<meta name="theme-color" content="#060711">
+<link rel="stylesheet" href="estilo.css">
+</head>
+<body>
+<div class="ia">Texto escrito por Tus leads en automático con ayuda de inteligencia artificial y revisado antes de publicarse.</div>
+<header class="top"><div class="w"><a class="logo" href="index.html">la <b>nave</b> · Tus leads en automático</a><a class="btn sec" href="https://nave.tusleadsenautomatico.com/piloto.html">Ver la nave</a></div></header>
+<main>
+<div class="w">
+<p class="rot">Auditoría de Fugas · caso propio</p>
+<h1>Siete botones de WhatsApp en mi web y <em>ninguno dice de qué página viene</em></h1>
+<p class="nota">Comprobado el 22/10/2026. El caso es mío, no de un cliente.</p>
+
+<p>Mi web (<code>tusleadsenautomatico.com</code>) tiene botones de WhatsApp. Leí su código con <code>curl</code>: dos en la portada, dos en <code>/servicios/</code> y tres en <code>/contacto/</code>. Los siete abren el mismo mensaje prefijado: «Hola, quiero un diagnóstico».</p>
+<p>Es decir, quien me escribe desde la portada, desde servicios o desde contacto me manda exactamente la misma frase.</p>
+
+<h2>Por qué es una fuga</h2>
+<p>Con ese texto no puedo saber qué página trajo cada conversación, ni cuál de los botones se pulsa más. No he medido cuántos mensajes llegan por ahí ni puedo afirmar que haya perdido ninguno: lo que digo es que, tal como está, no podría saberlo. Si el día de mañana cambio una página, no tendría cómo comprobar si eso movió algo.</p>
+<p>Arreglo posible, sin herramientas: un texto distinto por página («Hola, vengo de la página de servicios…»), para que el primer mensaje ya lleve el origen.</p>
+
+<h2>Cómo comprobar el tuyo en un minuto</h2>
+<p>Desde la terminal: <code>curl -sL https://tudominio.com/ | grep -o "wa.me[^\"]*" | sort | uniq -c</code>. Repítelo con tus páginas principales. Si todas devuelven el mismo texto, no puedes distinguir de dónde te escriben. Si solo tienes un número de teléfono sin más, lo mismo pasa con las llamadas.</p>
+
+<h2>Auditoría de Fugas · 197 €</h2>
+<p>Reviso tu web, tu ficha de Google, tus anuncios si los tienes y cómo contestas a quien te escribe, y te digo qué arreglar primero. Informe por escrito y 15 minutos de explicación.</p>
+<p><a class="btn" href="https://buy.stripe.com/fZuaEW7V6dBMbD15kx3ks09">Reservar · 197 €</a></p>
+<p class="nota">Contenido con apoyo de IA. Sin cifras de resultados ni opiniones de clientes. Contacto: hola@tusleadsenautomatico.com.</p>
+</div>
+</main>
+</body>
+</html>
