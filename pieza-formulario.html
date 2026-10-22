@@ -1,0 +1,37 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Mi formulario de contacto pide teléfono y email a la vez, los dos obligatorios</title>
+<meta name="description" content="Una fuga propia, comprobada con curl el 23/10/2026: el formulario de contacto de mi web exige nombre, teléfono y email. Qué pregunta hacerse y cómo mirar el tuyo.">
+<meta name="theme-color" content="#060711">
+<link rel="stylesheet" href="estilo.css">
+</head>
+<body>
+<div class="ia">Texto escrito por Tus leads en automático con ayuda de inteligencia artificial y revisado antes de publicarse.</div>
+<header class="top"><div class="w"><a class="logo" href="index.html">la <b>nave</b> · Tus leads en automático</a><a class="btn sec" href="https://nave.tusleadsenautomatico.com/piloto.html">Ver la nave</a></div></header>
+<main>
+<div class="w">
+<p class="rot">Auditoría de Fugas · caso propio</p>
+<h1>Mi formulario de contacto pide teléfono y email a la vez, <em>los dos obligatorios</em></h1>
+<p class="nota">Comprobado el 23/10/2026. El caso es mío, no de un cliente.</p>
+
+<p>El formulario de <code>tusleadsenautomatico.com/contacto/</code> tiene tres campos con el atributo <code>required</code>: nombre, teléfono y email. Sin los tres, no se envía. Lo leí con <code>curl</code>: <code>curl -sL https://tusleadsenautomatico.com/contacto/ | grep -o 'name="[a-z-]*" required'</code> devuelve <code>nombre</code>, <code>telefono</code> y <code>email</code>.</p>
+<p>La página, además, promete responder «en menos de 24 h».</p>
+
+<h2>Por qué puede ser una fuga</h2>
+<p>No he medido cuánta gente abandona el formulario ni puedo afirmar que haya perdido a nadie por esto: no lo sé. Lo que sí es cierto es que le pido a quien escribe dos vías de contacto cuando con una podría responderle. Cada dato obligatorio es una decisión; esta la tomé sin una razón escrita, y esa es la pregunta que vale la pena hacerse en cualquier web.</p>
+<p>Revisión posible: dejar obligatorio solo el medio por el que de verdad vas a contestar, y el otro como opcional.</p>
+
+<h2>Cómo comprobar el tuyo en un minuto</h2>
+<p>Desde la terminal: <code>curl -sL https://tudominio.com/contacto | grep -o 'name="[a-z-]*" required'</code>. Cuenta los campos obligatorios y pregúntate, uno a uno, si sin ese dato podrías contestar. Si el formulario lo pinta JavaScript, <code>curl</code> no lo verá: mira entonces el código desde el navegador.</p>
+
+<h2>Auditoría de Fugas · 197 €</h2>
+<p>Reviso tu web, tu ficha de Google, tus anuncios si los tienes y cómo contestas a quien te escribe, y te digo qué arreglar primero. Informe por escrito y 15 minutos de explicación.</p>
+<p><a class="btn" href="https://buy.stripe.com/fZuaEW7V6dBMbD15kx3ks09">Reservar · 197 €</a></p>
+<p class="nota">Contenido con apoyo de IA. Sin cifras de resultados ni opiniones de clientes. Contacto: hola@tusleadsenautomatico.com.</p>
+</div>
+</main>
+</body>
+</html>
