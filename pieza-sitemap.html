@@ -1,0 +1,36 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>El mapa de mi web dice que la actualicé en agosto</title>
+<meta name="description" content="Una fuga propia, comprobada con curl el 22/10/2026: el sitemap de mi web fecha mis tres páginas principales el 17/08/2026 y el servidor las sirve con fechas posteriores. Y cómo mirar el tuyo.">
+<meta name="theme-color" content="#060711">
+<link rel="stylesheet" href="estilo.css">
+</head>
+<body>
+<div class="ia">Texto escrito por Tus leads en automático con ayuda de inteligencia artificial y revisado antes de publicarse.</div>
+<header class="top"><div class="w"><a class="logo" href="index.html">la <b>nave</b> · Tus leads en automático</a><a class="btn sec" href="https://nave.tusleadsenautomatico.com/piloto.html">Ver la nave</a></div></header>
+<main>
+<div class="w">
+<p class="rot">Auditoría de Fugas · caso propio</p>
+<h1>El mapa de mi web dice que la actualicé <em>en agosto</em></h1>
+<p class="nota">Comprobado el 22/10/2026. El caso es mío, no de un cliente.</p>
+
+<p>Mi web (<code>tusleadsenautomatico.com</code>) tiene un sitemap: el fichero que le dice a Google qué páginas existen y cuándo cambiaron por última vez. Lo leí con <code>curl</code>.</p>
+<p>Las tres páginas principales (portada, <code>/servicios/</code> y <code>/contacto/</code>) llevan en el sitemap <code>&lt;lastmod&gt;2026-08-17&lt;/lastmod&gt;</code>. Al pedir esas mismas páginas con <code>curl -I</code>, el servidor las devuelve con una cabecera <code>last-modified</code> posterior: 16/10 la portada, 22/10 <code>/servicios/</code> y 17/10 <code>/contacto/</code>.</p>
+
+<h2>Por qué es una fuga</h2>
+<p>No puedo decir que el contenido cambiara en esas fechas: la cabecera del servidor puede reflejar una simple republicación. Lo que sí veo es que dos fuentes de mi propia web se contradicen sobre cuándo cambió cada página. Si dejas la fecha del sitemap fija mientras trabajas la web, le das a Google una señal de que nada se ha movido. No lo he medido, y no sé cuánto peso le da Google a ese campo, así que no afirmo que me haya costado nada. Digo que el dato, tal como está, no cuenta lo que pasa.</p>
+
+<h2>Cómo comprobar el tuyo en un minuto</h2>
+<p>Desde la terminal: <code>curl -sL https://tudominio.com/sitemap.xml | grep -E "loc|lastmod"</code>. Si no existe, mira en <code>tudominio.com/robots.txt</code> si apunta a otra dirección. Después compara con <code>curl -sIL https://tudominio.com/ | grep -i last-modified</code>. Si las fechas no cuadran con lo último que cambiaste, o el sitemap no existe, es una fuga pequeña que se arregla en minutos.</p>
+
+<h2>Auditoría de Fugas · 197 €</h2>
+<p>Reviso tu web, tu ficha de Google, tus anuncios si los tienes y cómo contestas a quien te escribe, y te digo qué arreglar primero. Informe por escrito y 15 minutos de explicación.</p>
+<p><a class="btn" href="https://buy.stripe.com/fZuaEW7V6dBMbD15kx3ks09">Reservar · 197 €</a></p>
+<p class="nota">Contenido con apoyo de IA. Sin cifras de resultados ni opiniones de clientes. Contacto: hola@tusleadsenautomatico.com.</p>
+</div>
+</main>
+</body>
+</html>
