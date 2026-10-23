@@ -1,0 +1,38 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>La descripción de mi página de contacto no dice quién soy ni qué hago</title>
+<meta name="description" content="Una fuga propia, comprobada con curl el 23/10/2026: la descripción de la página de contacto de mi web es una frase suelta. Cómo mirar la tuya.">
+<meta name="theme-color" content="#060711">
+<link rel="stylesheet" href="estilo.css">
+</head>
+<body>
+<div class="ia">Texto escrito por Tus leads en automático con ayuda de inteligencia artificial y revisado antes de publicarse.</div>
+<header class="top"><div class="w"><a class="logo" href="index.html">la <b>nave</b> · Tus leads en automático</a><a class="btn sec" href="https://nave.tusleadsenautomatico.com/piloto.html">Ver la nave</a></div></header>
+<main>
+<div class="w">
+<p class="rot">Auditoría de Fugas · caso propio</p>
+<h1>La descripción de mi página de contacto <em>no dice quién soy ni qué hago</em></h1>
+<p class="nota">Comprobado el 23/10/2026. El caso es mío, no de un cliente.</p>
+
+<p>Cada página de <code>tusleadsenautomatico.com</code> declara una descripción (<code>meta name="description"</code>), el texto que los buscadores pueden usar como resumen cuando alguien te encuentra. Las leí con <code>curl</code>: <code>curl -sL https://tusleadsenautomatico.com/contacto/ | grep -o '&lt;meta name="description" content="[^"]*"'</code>.</p>
+<p>La portada dice: «Marketing, publicidad y atención al cliente automatizados con IA para negocios locales. Sistemas que captan, venden y atienden sin depender del dueño.» /servicios/ dice: «Publicidad multicanal, automatizaciones con IA, contenido y web + SEO. Servicios de Tus leads en automático para negocios locales.» Y /contacto/ dice solo: «Cuéntanos tu caso. Te respondemos con el siguiente paso.»</p>
+<p>La tercera no nombra la marca, ni a qué me dedico, ni para quién. El título de esa página sí lleva el nombre («Contacto · Tus leads en automático»), pero la descripción, no.</p>
+
+<h2>Por qué puede ser una fuga</h2>
+<p>No sé si algún buscador muestra hoy esa descripción ni cuánta gente llega a esa página desde una búsqueda: no lo he medido. Lo que sí es cierto es que, si la muestran, quien la lea verá una frase que podría ser de cualquier negocio. Es una decisión que tomé sin pensar en ella, y por eso entra en la lista.</p>
+<p>Revisión posible: una frase que diga quién eres, para quién trabajas y qué pasa después de escribir, como ya hacen la portada y /servicios/.</p>
+
+<h2>Cómo comprobar la tuya en un minuto</h2>
+<p>Desde la terminal: <code>curl -sL https://tudominio.com/contacto/ | grep -o '&lt;meta name="description" content="[^"]*"'</code>. Repítelo con tus páginas principales y compara: ¿cada descripción diría algo útil a un desconocido que no ha visto tu web? Si no sale nada, esa página no declara descripción; si tu web la pinta JavaScript, <code>curl</code> no la verá y tendrás que mirar el código desde el navegador.</p>
+
+<h2>Auditoría de Fugas · 197 €</h2>
+<p>Reviso tu web, tu ficha de Google, tus anuncios si los tienes y cómo contestas a quien te escribe, y te digo qué arreglar primero. Informe por escrito y 15 minutos de explicación.</p>
+<p><a class="btn" href="https://buy.stripe.com/fZuaEW7V6dBMbD15kx3ks09">Reservar · 197 €</a></p>
+<p class="nota">Contenido con apoyo de IA. Sin cifras de resultados ni opiniones de clientes. Contacto: hola@tusleadsenautomatico.com.</p>
+</div>
+</main>
+</body>
+</html>
